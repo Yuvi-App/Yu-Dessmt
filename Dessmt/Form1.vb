@@ -149,7 +149,6 @@ Public Class Form1
                 End If
                 GlobalVariables.strServerFilesFldrLocation = FolderBrowserDialog1.SelectedPath & "\ServerManagementFiles\"
                 GlobalVariables.strDBLocation = FolderBrowserDialog1.SelectedPath & "\db\players.sqlite"
-                lblDebug.Text = GlobalVariables.strServerFilesFldrLocation
                 Dim Writer As System.IO.StreamWriter
                 Writer = My.Computer.FileSystem.OpenTextFileWriter(FolderBrowserDialog1.SelectedPath & "\ServerManagementFiles\" & "Config.ini", False)
                 Writer.WriteLine("-------Demon's Souls Server Management Config-------")
@@ -189,7 +188,6 @@ Public Class Form1
         CheckServerTimer.Enabled = True
         ' Read Config File
         If System.IO.File.Exists("Config.ini") Then
-            lblDebug.Text = "Config Exists"
             Dim line As String() = IO.File.ReadAllLines("Config.ini")
             GlobalVariables.strEmulatorLocation = line(2)
             GlobalVariables.strServerFilesFldrLocation = line(4)

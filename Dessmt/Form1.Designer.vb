@@ -56,7 +56,6 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtPlayerName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblDebug = New System.Windows.Forms.Label()
         Me.CheckServerTimer = New System.Windows.Forms.Timer(Me.components)
         Me.groupBox1.SuspendLayout()
         Me.groupBox2.SuspendLayout()
@@ -81,7 +80,7 @@ Partial Class Form1
         Me.groupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.groupBox1.Name = "groupBox1"
         Me.groupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.groupBox1.Size = New System.Drawing.Size(376, 42)
+        Me.groupBox1.Size = New System.Drawing.Size(484, 42)
         Me.groupBox1.TabIndex = 4
         Me.groupBox1.TabStop = False
         Me.groupBox1.Text = "World Tendency Management"
@@ -89,10 +88,10 @@ Partial Class Form1
         'btnPureWhite
         '
         Me.btnPureWhite.Enabled = False
-        Me.btnPureWhite.Location = New System.Drawing.Point(301, 16)
+        Me.btnPureWhite.Location = New System.Drawing.Point(404, 16)
         Me.btnPureWhite.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPureWhite.Name = "btnPureWhite"
-        Me.btnPureWhite.Size = New System.Drawing.Size(70, 19)
+        Me.btnPureWhite.Size = New System.Drawing.Size(75, 19)
         Me.btnPureWhite.TabIndex = 0
         Me.btnPureWhite.Text = "Pure White"
         Me.btnPureWhite.UseVisualStyleBackColor = True
@@ -100,7 +99,7 @@ Partial Class Form1
         'btnSmallWhite
         '
         Me.btnSmallWhite.Enabled = False
-        Me.btnSmallWhite.Location = New System.Drawing.Point(227, 16)
+        Me.btnSmallWhite.Location = New System.Drawing.Point(306, 16)
         Me.btnSmallWhite.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSmallWhite.Name = "btnSmallWhite"
         Me.btnSmallWhite.Size = New System.Drawing.Size(70, 19)
@@ -111,7 +110,7 @@ Partial Class Form1
         'btnNeutral
         '
         Me.btnNeutral.Enabled = False
-        Me.btnNeutral.Location = New System.Drawing.Point(153, 16)
+        Me.btnNeutral.Location = New System.Drawing.Point(207, 16)
         Me.btnNeutral.Margin = New System.Windows.Forms.Padding(2)
         Me.btnNeutral.Name = "btnNeutral"
         Me.btnNeutral.Size = New System.Drawing.Size(70, 19)
@@ -122,7 +121,7 @@ Partial Class Form1
         'btnSmallBlack
         '
         Me.btnSmallBlack.Enabled = False
-        Me.btnSmallBlack.Location = New System.Drawing.Point(79, 16)
+        Me.btnSmallBlack.Location = New System.Drawing.Point(102, 16)
         Me.btnSmallBlack.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSmallBlack.Name = "btnSmallBlack"
         Me.btnSmallBlack.Size = New System.Drawing.Size(70, 19)
@@ -238,7 +237,7 @@ Partial Class Form1
         '
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 5.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.Location = New System.Drawing.Point(433, 253)
+        Me.label1.Location = New System.Drawing.Point(7, 240)
         Me.label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(56, 7)
@@ -421,15 +420,6 @@ Partial Class Form1
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Player Name"
         '
-        'lblDebug
-        '
-        Me.lblDebug.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDebug.Location = New System.Drawing.Point(9, 230)
-        Me.lblDebug.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblDebug.Name = "lblDebug"
-        Me.lblDebug.Size = New System.Drawing.Size(418, 28)
-        Me.lblDebug.TabIndex = 11
-        '
         'CheckServerTimer
         '
         Me.CheckServerTimer.Interval = 5000
@@ -438,8 +428,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(504, 268)
-        Me.Controls.Add(Me.lblDebug)
+        Me.ClientSize = New System.Drawing.Size(504, 253)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -496,7 +485,6 @@ Partial Class Form1
     Friend WithEvents txtPlayerName As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents lblDebug As Label
     Friend WithEvents CheckServerTimer As Timer
     Friend WithEvents btnSetTendency As Button
     Friend WithEvents txtTendecyAmount As NumericUpDown
