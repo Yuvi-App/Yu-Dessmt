@@ -173,6 +173,9 @@ Public Class Form1
                 btnStopServer.Enabled = True
                 btnSetTendency.Enabled = True
                 btnGetTendency.Enabled = True
+                If Not Directory.Exists(FolderBrowserDialog1.SelectedPath & "\ServerManagementFiles\BackupLogs") Then
+                    My.Computer.FileSystem.CreateDirectory(FolderBrowserDialog1.SelectedPath & "\ServerManagementFiles\BackupLogs")
+                End If
             Else
                 MsgBox("Please Select the Emulator Folder Location")
             End If
